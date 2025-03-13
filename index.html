@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/icons/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--Linking boxicon for icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="all"  style="position: absolute;">
+        <div class="top-icon" style="position: absolute;">
+            <div class="icon-1">
+                <button class="btn" style="background-color: #112d4e; border: none; font-size: 50px;">
+                    <i class="fa-solid fa-cloud-moon"></i>
+            </div>
+
+            <h1 class="fw">Find Weather</h1>
+        </div>
+
+        <div class="icon-2">
+            <a href="https://github.com/Mr-nikhil-jha" target="_blank">
+                <button class="btn" style="background-color: #112d4e; border: none; font-size: 50px;">
+                    <i class="fa-brands fa-github"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="wrapper" style="position: absolute; ">
+        <header><i class="bx bx-left-arrow-alt"></i>WeatherApp</header>
+        <section class="input-part">
+            <p class="info-txt ">Please enter a valid city name</p>
+            <input type="text" placeholder="Enter city name" spellcheck="false" required>
+            <div class="separator"></div>
+            <button>Get Device Location</button>
+
+        </section>
+        <section class="weather-part">
+            <img src="#" alt="Weather icon">
+            <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>C
+            </div>
+            <div class="weather">_ _</div>
+            <div class="locations">
+                <i class="bx bx-map"></i>
+                <span>_, _</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2">_</span>
+                            <span class="deg">°</span>C
+                        </div>
+                        <p>Feels Like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                        <span>_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <section style="margin-top: 40rem; margin-right: 80rem;"> -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #112d4e;
+    overflow: hidden;
+}
+.all {
+    display: flex;
+    flex-direction: row;
+    left: 80px;
+    top: 2px;
+    right: 0;
+}
+
+/* .top-icon {
+     margin-left: -25rem;
+    margin-top: -40rem;
+    display: flex;
+    flex-direction: row; 
+} */
+
+.icon-1 {
+    top: 0;
+    margin-left: -4rem;
+}
+
+button i {
+    font-size: 2.5rem;
+    /* margin-top: 5rem; */
+    color: rgb(238, 238, 238);
+    filter: drop-shadow(rgb(238, 238, 238) 0px 0px 10px);
+}
+
+.btn {
+    padding: 8px;
+}
+
+.fw {
+    font-size: 1.2rem;
+    margin: -3.5rem 0 -5rem 0;
+    color: white;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+    line-height: 1.167;
+    cursor: pointer;
+}
+
+.git {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    border: white 1px solid;
+    color: white;
+    background: transparent;
+}
+
+.git:hover {
+    background-color: rgba(84, 84, 195, 0.099) d4e;
+}
+
+.icon-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
+
+    /* text-indent: -999em; */
+    text-decoration: none;
+}
+
+/* text hover
+h1 {
+    position: relative;
+  }
+  
+  h1::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: white;
+      bottom: 0;
+      left: 0;
+      
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .4s ease-in-out;
+    }
+  
+  h1:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  } */
+
+.wrapper {
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 7px;
+    width: 400px;
+}
+
+.wrapper header {
+    font-weight: 500;
+    color: #43affc;
+    font-size: 21px;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 1px solid #bfbfbf;
+}
+
+header i {
+    cursor: pointer;
+
+    margin-right: 8px;
+}
+
+.wrapper .active header i {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.wrapper .input-part {
+    margin: 20px 25px 30px;
+}
+
+.wrapper.active .input-part {
+    display: none;
+}
+
+.input-part .info-txt {
+    display: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.info-txt.error {
+    display: block;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.info-txt.pending {
+    display: block;
+    color: #0c5460;
+    background: #d1ecf1;
+    border: 1px solid #f5c6cb;
+}
+
+.input-part :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.input-part .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator::before {
+    content: "or";
+    padding: 0 15px;
+    color: #ccc;
+    font-size: 19px;
+    background: #fff;
+}
+
+.input-part input {
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+
+.input-part input:is(:focus, :valid) {
+    border: 2px solid #43affc;
+}
+
+.input-part button {
+    color: #fff;
+    cursor: pointer;
+    background: #43affc;
+}
+
+.wrapper .weather-part {
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.active .weather-part {
+    display: flex;
+}
+
+.weather-part img {
+    max-width: 125px;
+}
+
+.weather-part .temp {
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.weather-part .temp .numb {
+    font-weight: 600;
+}
+
+.weather-part .temp .deg {
+    font-size: 40px;
+    margin: 10px 5px 0 0;
+    display: block;
+}
+
+.weather-part .locations {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 21px;
+}
+
+.locations i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.weather-part .bottom-details {
+    /* background: red; */
+    width: 100%;
+    border-top: 1px solid #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-details .column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+.column i {
+    font-size: 40px;
+    color: #43affc;
+}
+
+.column .humidity {
+    border-left: 1px solid #bfbfbf;
+}
+
+.details .temp,
+.humidity span {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.details .temp .deg {
+    margin: 0;
+    font-size: 17px;
+    padding: 0 2px 0 1px;
+}
+
+.details p {
+    font-size: 14px;
+    margin-top: -6px;
+}
+
+.input-part button {
+    color: #fff;
+    cursor: pointer;
+    background: #43affc;
+    transition: 0.3s ease;
+}
+
+.input-part button:hover {
+    background: #1d9ffc;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*Responsive*/
+@media (max-width: 767px) {
+    .wrapper {
+        max-width: 80%;
+        /* padding: 20px; */
+    }
+    body {
+        overflow: hidden;
+    }
+
+    /* .icon-1 {
+        margin-top: -2rem;
+        font-size: small;
+        margin: 0;
+        margin-left: 30rem;
+        width: 20px;
+    } 
+    
+
+     .fw {
+        margin-top: -3rem;
+        font-size: 20px;
+        padding-left: 30px;
+    } */
+    .icon-2 {
+        right: 0px;
+        width: 81px;
+    }
+}
