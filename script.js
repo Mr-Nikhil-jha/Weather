@@ -1,6 +1,8 @@
 //api key variable
 let APIkey;
-APIkey = "aa3e61c5be74d68e22ae861cef48d33d";
+APIkey = config.API_KEY;
+console.log(APIkey); // Ensure you have set up dotenv if using Node.js
+// return;
 const wrapper = document.querySelector(".wrapper"),
     inputPart = document.querySelector(".input-part"),
     infoTxt = inputPart.querySelector(".info-txt"),
@@ -92,18 +94,3 @@ function weatherDetails(info) {
 arrowBack.addEventListener("click", () => {
     wrapper.classList.remove("active");
 });
-
-// const disabledKeys = ["c", "C", "x", "u", "I"]; // keys that will be disabled
-//       const showAlert = e => {
-//         e.preventDefault(); // preventing its default behaviour
-//         return alert("Sorry, you can't view or copy source codes this way!");
-//       }
-//       document.addEventListener("contextmenu", e => {
-//         showAlert(e); // calling showAlert() function on mouse right click
-//       });
-//       document.addEventListener("keydown", e => {
-//         // calling showAlert() function, if the pressed key matched to disabled keys
-//         if(e.ctrlKey && disabledKeys.includes(e.key) || e.key === "F12") {
-//           showAlert(e);
-//         }
-//       });
