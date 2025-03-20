@@ -1,6 +1,6 @@
 //api key variable
 let APIkey;
-APIkey = config.API_KEY;
+APIkey = API_KEY;
 console.log(APIkey); // Ensure you have set up dotenv if using Node.js
 // return;
 const wrapper = document.querySelector(".wrapper"),
